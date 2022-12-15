@@ -1,6 +1,7 @@
 import type { PageServerLoad } from "./$types"
 
-export const load: PageServerLoad = () => {
+export const load: PageServerLoad = async ({ parent }) => {
+	await parent()
 	const getCustomers = async () => {
 		console.log("Fetched customers from database")
 		const res = await fetch(

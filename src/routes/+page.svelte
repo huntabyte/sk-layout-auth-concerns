@@ -5,7 +5,7 @@
 </script>
 
 <main>
-	<h1>Should you use +layouts for auth?</h1>
+	<h1>Is Auth in +layout sufficient?</h1>
 	<p>Let's find out if it can be trusted.</p>
 	{#if data.user}
 		Logged in as: {data.user.email}
